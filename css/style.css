@@ -179,6 +179,11 @@ body{
 }
 
 
+/* main */
+.mainSlide > ul > li > a > img{
+    max-width: 100%;
+}
+
 
 
 
