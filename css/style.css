@@ -50,11 +50,44 @@ body{
 .bookMark > a.mark{
     display: block;
 }
-
-
-
-
-
+.rightBtn > ul > li{
+    letter-spacing: -0.6px;
+    position: relative;
+}
+.rightBtn > ul > li{
+    padding-right: 13px;
+    margin-left: 13px;
+}
+.rightBtn > ul > li:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 13px;
+    width: 1px;
+    height: 13px;
+    background: #c1c1c1;
+}
+.login > a{
+    color: #a71c15;
+}
+.join::after{
+    display: none;
+}
+.member{
+    background: #263a67;
+    width: 110px;
+    text-align: center;
+}
+.member > a{
+    margin-left: 13px;
+}
+.member > a > span{
+    color: #fff;
+    background-image: url(../img/setting.png);
+    background-repeat: no-repeat;
+    padding-left: 22px;
+    background-position: center left;
+}
 
 
 
