@@ -11,7 +11,7 @@ body{
 }
 
 
-/* header */
+/* topInfo */
 .topInfo{
     border-bottom: 1px solid #e3e3e3;
 }
@@ -88,6 +88,70 @@ body{
     padding-left: 22px;
     background-position: center left;
 }
+
+
+/* header */
+.logoWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 0 36px 0;
+}
+.telInfo,
+.tel,
+.tel.no1 .tit,
+.tel.no2 .tit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tel.no1{
+    margin-right: 50px;
+}
+.tel.no1 .tit{
+    font-size: 15px;
+    font-weight: 500;
+    padding-right: 13px;
+    color: #8f5d14;
+}
+.tel.no1 .tit > img{
+    margin-right: 6px;
+}
+.tel.no1 .num{
+    font-size: 21px;
+    font-weight: 500;
+    color: #f9b000;
+}
+.tel.no2 .tit{
+    font-size: 15px;
+    font-weight: 500;
+    padding-right: 13px;
+    color: #652f10;
+}
+.tel.no2 .tit > img{
+    margin-right: 6px;
+}
+.tel.no2 .num{
+    font-size: 21px;
+    font-weight: 500;
+    color: #e4631f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
