@@ -252,6 +252,127 @@ body{
 }
 
 
+/* eventWrap */
+.eventWrap{
+    padding: 60px 0;
+}
+.eventNoticeWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.eventBox{
+    margin-right: 50px;
+}
+.eventTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    color: #222;
+    font-weight: 500;
+    line-height: 28px;
+    padding-bottom: 28px;
+}
+.eventBtn{
+    width: 18px;
+    height: 18px;
+    background: #0072bc;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+
+/* noticeWrap */
+.noticeTitle{
+    width: 622px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.noticeBox{
+    position: relative;
+}
+.noticeBox > a:first-child{
+    font-size: 28px;
+    line-height: 28px;
+    color: #222;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+.noticeBox > a:first-child::after{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 123px;
+    width: 1px;
+    height: 23px;
+    background: #c5c5c5;
+}
+.noticeBox > a:last-child{
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 2px;
+    color: #999999;
+    font-weight: 500;
+}
+.noticeBox,
+.noticeMore > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.noticeMore{
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #cfcfcf;
+    font-size: 15px;
+    color: #222222;
+    padding: 0 16px;
+}
+.noticeMore > a > span{
+    padding-right: 20px;
+}
+.noticeList > ul > li > a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    font-weight: 300;
+}
+.noticeList > ul > li:not(:last-child){
+    margin-bottom: 17px;
+}
+.noticeList > .tit{
+    width: 530px;
+}
+.noticeList > .date{
+    float: right;
+    color: #999999;
+}
+.mainsBannerList{
+    padding-top: 60px;
+    margin-top: 60px;
+    border-top: 1px solid #e5e5e5;
+}
+.mainsBannerList > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 18px;
+}
+
+
+
+
+
+
+
 
 
 
