@@ -114,6 +114,7 @@
     <!-- main -->
     <main>
         <div class="continer-wrap">
+            <!-- 메인 슬라이드 배너 -->
             <div class="mainSlide swiper mySwiper">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide"><a href="#"><img src="./img/banner1.jpg" alt=""></a></li>
@@ -123,6 +124,18 @@
                 </ul>
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!-- 메인 아이콘 리스트 -->
+            <div class="mainIconList">
+				<ul>
+					<li class="no1"><a href="#"><img src="./img/mainIco01.png" alt="운영지표 아이콘"><span>운영지표</span></a></li>
+					<li class="no2"><a href="#"><img src="./img/mainIco02.png" alt="업무구역 아이콘"><span>업무구역</span></a></li>
+					<li class="no3"><a href="#"><img src="./img/mainIco03.png" alt="어촌계 현황 아이콘"><span>어촌계 현황</span></a></li>
+					<li class="no4"><a href="#"><img src="./img/mainIco04.png" alt="연혁 아이콘"><span>연혁</span></a></li>
+					<li class="no5"><a href="#"><img src="./img/mainIco05.png" alt="조합브랜드 아이콘"><span>조합브랜드</span></a></li>
+					<li class="no6"><a href="#"><img src="./img/mainIco06.png" alt="채용공고 아이콘"><span>채용공고</span></a></li>
+				</ul>
+			</div>
         </div>
     </main>
 
@@ -134,6 +147,7 @@
     var swiper = new Swiper(".mySwiper", {
       pagination: {
         el: ".swiper-pagination",
+        auto: true,
       },
     });
   </script>
