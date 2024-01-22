@@ -139,6 +139,48 @@ body{
 }
 
 
+/* nav */
+.gnb{
+    background: #263a67;
+    color: #fff;
+}
+.gnb > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 0 auto;
+}
+.subGnb{
+    display: none;
+}
+.gnb > ul > li{
+    width: 260px;
+    color: #fff;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+.nav5{
+    width: 303px;
+    background: #0071bf;
+}
+.nav5 > a{
+    position: relative;
+}
+.nav5 > a > span::after{
+    content: '';
+    position: absolute;
+    left: -13px;
+    top: 0;
+    width: 24px;
+    height: 11px;
+    background: url(../img/fish.png) no-repeat;
+}
+
+
+
+
 
 
 
