@@ -369,26 +369,139 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:340px) and (max-width:500px){
-    
+/* footer */
+footer{
+    background: #263a67;
+    color: #fff;
+    position: relative;
+}
+.footerInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0 40px 0;
+}
+.footList{
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #516185;
+}
+.footList > ul{
+    display: flex;
+    flex-direction: row;
+}
+.footList > ul > li{
+    font-size: 15px;
+    line-height: 15px;
+    color: #999999;
+    position: relative;
+}
+.footList > ul > li.bold{
+    color: #fffbaa;
+}
+.footList > ul > li:not(:last-child){
+    margin-right: 13px;
+    padding-right: 13px;
+}
+.footList > ul > li > a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 14px;
+    background: #fff;
+}
+.footList > ul > li:last-child > a::after{
+    display: none;
+}
+.leftInfo > .info{
+    font-size: 14px;
+    line-height: 25px;
+    font-size: 300;
+    color: #999999;
+}
+.leftInfo > .info > .person{
+    color: #c5c5c5;
+    width: 115px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #48587c;
+    background: #1e2e52;
+}
+.centerInfo{
+    margin-left: 75px;
+    width: 465px;
+}
+.centerInfo > .tit{
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #516185;
+    height: 41px;
+}
+.centerInfo > .tit > span{
+    font-size: 14px;
+    color: #e3e3e3;
+}
+.telInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 14px;
+}
+.telInfo > .tit{
+    font-size: 17px;
+}
+.telInfo > .text{
+    margin-left: 30px;
+    font-size: 17px;
+    color: #cfcfcf;
+}
+.timeInfo > span{
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    background: #1e2e52;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    padding: 2px 20px;
+}
+.rightInfo{
+    margin-left: 75px;
+    border: 1px solid #48587c;
+    width: 273px;
+    padding: 34px 0 0 29px;
+}
+.rightInfo > .num{
+    margin-bottom: 14px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fffbaa;
+    margin-top: 24px;
+}
+.rightInfo > .txt{
+    font-size: 15px;
+    color: #bdbdbd;
+    line-height: 15px;
+    margin-top: 14px;
+}
+footer > .copy{
+    padding: 40px 0;
+    background: #0e1f4a;
+    color: #999999;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+}
+.btnTop{
+    position: absolute;
+    top: -30px;
+    right: 60px;
 }
