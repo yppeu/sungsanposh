@@ -143,6 +143,8 @@ body{
 .gnb{
     background: #263a67;
     color: #fff;
+    position: relative;
+    z-index: 999;
 }
 .gnb > ul{
     display: flex;
@@ -151,15 +153,26 @@ body{
     width: 1300px;
     margin: 0 auto;
 }
-.subGnb{
-    display: none;
-}
 .gnb > ul > li{
     width: 260px;
     color: #fff;
-    height: 55px;
-    line-height: 55px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
+}
+.subGnb{
+    display: none;
+    opacity: 0.8;
+}
+.subGnb > li{
+    width: 100%;
+    background: #263a67;
+    font-size: 15px;
+    z-index: 999;
+}
+.subGnb > li > a:hover{
+    font-weight: 500;
+    color: #f9b626;
 }
 .nav5{
     width: 303px;
@@ -442,7 +455,6 @@ footer{
     margin-bottom: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid #516185;
-    height: 41px;
 }
 .centerInfo > .tit > span{
     font-size: 14px;

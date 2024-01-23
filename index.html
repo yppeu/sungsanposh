@@ -96,8 +96,6 @@
               <ul class="subGnb">
                 <li><a href="#">이용안내</a></li>
                 <li><a href="#">층별소개</a></li>
-                <!--<li><a href="/fish/community/center.php">커뮤니티</a></li>
-                            <li><a href="/fish/reserve/live.php">일식당 예약</a></li>-->
               </ul>
             </li>
             <li class="nav3">
@@ -346,6 +344,8 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -354,6 +354,14 @@
           el: ".swiper-pagination",
           auto: true,
         },
+      });
+      $(document).ready(function(){
+          $(".gnb > ul > li").mouseenter(function(){
+              $(this).children(".subGnb").stop().slideDown(10);
+          });
+          $(".gnb > ul > li").mouseleave(function(){
+              $(this).children(".subGnb").stop().slideUp(10);
+          });
       });
     </script>
   </body>
