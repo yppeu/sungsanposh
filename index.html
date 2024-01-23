@@ -133,16 +133,16 @@
         <div class="mainSlide swiper mySwiper">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
-              <a href="#"><img src="./img/banner1.jpg" alt="" /></a>
+              <a href="#"><img src="./img/banner1.jpg" alt="배너이미지1" /></a>
             </li>
             <li class="swiper-slide">
-              <a href="#"><img src="./img/banner2.jpg" alt="" /></a>
+              <a href="#"><img src="./img/banner2.jpg" alt="배너이미지2" /></a>
             </li>
             <li class="swiper-slide">
-              <a href="#"><img src="./img/banner3.jpg" alt="" /></a>
+              <a href="#"><img src="./img/banner3.jpg" alt="배너이미지3" /></a>
             </li>
             <li class="swiper-slide">
-              <a href="#"><img src="./img/banner4.jpg" alt="" /></a>
+              <a href="#"><img src="./img/banner4.jpg" alt="배너이미지4" /></a>
             </li>
           </ul>
           <div class="swiper-pagination"></div>
@@ -352,8 +352,12 @@
       var swiper = new Swiper(".mySwiper", {
         pagination: {
           el: ".swiper-pagination",
-          auto: true,
+          clickable: true,
         },
+        autoplay: {
+          delay: 3000, // 재생간격 3초 
+        },
+        loop: true, // 루프(반복)하도록 설정
       });
       $(document).ready(function(){
           $(".gnb > ul > li").mouseenter(function(){
